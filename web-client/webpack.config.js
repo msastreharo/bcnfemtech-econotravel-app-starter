@@ -5,6 +5,10 @@ const path = require("path");
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 module.exports = {
+    devServer: {
+        historyApiFallback: true,
+        port: 3000
+    },
     entry: [
         path.join(__dirname, 'src/js/main.js')
     ],

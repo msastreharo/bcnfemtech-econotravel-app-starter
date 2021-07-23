@@ -1,54 +1,25 @@
+body{
+  margin: 0 auto;
+}
+
 #app {
   height: 100vh;
-  padding: 20%;
 }
 
-.experiencesList {
-  border: thin solid #444444;
-  width: 300px;
-  margin: auto;
-  border-radius: 12px;
-  background-color: whitesmoke;
+.navBar {
+  height: 100px;
+  background-color: #eeeeee;
+  padding: 10px;
 
-  &__title {
-    text-align: center;
-  }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
+  &__link {
     padding: 10px;
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+      color: forestgreen;
+    }
   }
 
-  &__item {
-    box-shadow: #444444 1px 1px;
-    border: thin solid black;
-  }
-}
-
-.experience {
-
-  height: 120px;
-  position: relative;
-  text-align: center;
-
-  &__name {
-    padding: 20%;
-  }
-
-  &__details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-
-  }
-  &:hover &__details {
-    width: 100%;
-  }
 }
