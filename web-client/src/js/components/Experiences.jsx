@@ -18,7 +18,7 @@ export const Experiences = (props) => {
     }, []);
 
     return (
-        <div className="experience">
+        <div className="experienceSection">
             {props.experiences.map(experience =>
                 <ExperienceCard experience = {experience} key={experience.id} />
             )}

@@ -1,5 +1,6 @@
 body{
   margin: 0 auto;
+  font-family: "Helvetica", sans-serif;
 }
 
 #app {
@@ -8,18 +9,38 @@ body{
 
 .navBar {
   height: 100px;
-  background-color: #eeeeee;
-  padding: 10px;
+  background-color: #2F5135;
+  display: flex;
+  align-items: center;
 
 
   &__link {
-    padding: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
+    align-items: center;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    letter-spacing: 5px;
+
 
     &:hover{
-      color: forestgreen;
+      color: yellowgreen;
     }
   }
 
+}
+
+.logo-img {
+  height: 140px;
+}
+
+.coverImgContainer {
+  height: 600px;
+}
+
+.coverImg {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
 }
